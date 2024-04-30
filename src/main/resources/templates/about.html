@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is about page</h1><hr>
+
+    <!-- using fragment
+        - instead of th:insert we can also use th:replace
+        - using fragment we can pass arguments to the parent
+        - argument can be anything like html page, integer, float,string etc..
+    -->
+    <div th:insert="~{base::parent(10, 20)}"></div> 
+</body>
+</html>

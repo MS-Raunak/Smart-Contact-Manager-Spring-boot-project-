@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
+    <!-- flowbite css cdn link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="bg-gray-400 w-1/2 mx-auto mt-4 p-5 flex flex-col space-y-3">
+        <h1 class="font-bold text-3xl" data-th-text="${title}">Welcome to SCM2.O</h1>
+        <h3 class="text-red-500">By- <span th:text="${name}"></span></h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium eligendi magni est tempore nobis et doloribus, magnam sunt maxime ullam repellat debitis nisi dolore cum eos neque nesciunt veniam quam.</p>
+        
+        <div class="">
+            <button class="p-2 py-3 bg-blue-600 rounded text-white hover:bg-blue-500">
+                <a data-th-href="${github}">Click here to see github</a>
+            </button>
+        </div>
+    </div>
+
+   
+    
+    <!-- flowbite js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
