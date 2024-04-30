@@ -31,7 +31,7 @@ public class PageController {
     //Services page route
     @RequestMapping("/service")
     public String services() {
-        System.out.println("Service page loading...");
+       // System.out.println("Service page loading...");
         return "service";
     }
     
